@@ -1,0 +1,9 @@
+environments/testing/.terraform.lock.hcl
+environments/testing/terraform.tfstate
+environments/testing/terraform.tfstate.backup
+environments/testing/testing.tfvars
+environments/testing/.terraform/modules/modules.json
+environments/testing/.terraform/providers/registry.terraform.io/hashicorp/aws/6.12.0/linux_amd64/LICENSE.txt
+environments/testing/.terraform/providers/registry.terraform.io/hashicorp/aws/6.12.0/linux_amd64/terraform-provider-aws_v6.12.0_x5
+environments/testing/.terraform/providers/registry.terraform.io/hashicorp/http/3.5.0/linux_amd64/LICENSE.txt
+environments/testing/.terraform/providers/registry.terraform.io/hashicorp/http/3.5.0/linux_amd64/terraform-provider-http_v3.5.0_x5

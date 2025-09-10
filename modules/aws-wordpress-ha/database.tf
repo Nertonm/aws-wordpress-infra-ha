@@ -1,4 +1,6 @@
+# Criação da RDS Instance
 resource "aws_db_instance" "RDS" {
+  ## Configuração da RDS Instance
   identifier = "${var.project_name}-rds"
   allocated_storage    = "${var.db_allocated_storage}"
   storage_type         = "${var.db_storage_type}"
@@ -22,6 +24,8 @@ resource "aws_db_instance" "RDS" {
 # RDS Subnet Group
 resource "aws_db_subnet_group" "db_subnet" {
   name       = "${var.project_name}-db-subnet-group"
+  
+  ## Configuração do grupo de sub-redes
   subnet_ids = aws_subnet.private_subnets[*].id
   description = "Subnet group for RDS instance"
 }

@@ -23,7 +23,7 @@ variable "vpc_name" {
 variable "nat_gateway_count" {
     description = "Number of NAT Gateways to create (one per public subnet), for testing use 1"
     type        = number
-    default     = 1
+    default     = 2
     validation {
         condition     = var.nat_gateway_count <= length(var.az)
         error_message = "NAT Gateway count cannot exceed the number of availability zones"

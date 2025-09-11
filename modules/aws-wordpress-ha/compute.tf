@@ -108,8 +108,8 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu_alarm" {
   period = var.cloudwatch_period
   statistic = "Average"
   threshold = var.cloudwatch_threshold 
-  alarm_description = "Este alarme dispara se a utilização média da CPU exceder as especificações."
-  
+  alarm_description = "Este alarme dispara se a utilização média da CPU exceder os limites predefinidos."
+
   # O alarme aponta para o Tópico SNS. O Tópico se encarrega de enviar para o e-mail.
   alarm_actions = [aws_sns_topic.alerts.arn]
 
